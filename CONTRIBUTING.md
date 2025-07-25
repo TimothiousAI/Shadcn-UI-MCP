@@ -19,7 +19,7 @@ We welcome contributions of all kinds—bug reports, feature requests, code, tes
 ## How to Contribute
 
 ### 1. Reporting Issues
-- Use [GitHub Issues](https://github.com/Jpisnice/shadcn-ui-mcp-server/issues) for bugs, feature requests, or questions.
+- Use [GitHub Issues](https://github.com/TimothiousAI/Shadcn-UI-MCP/issues) for bugs, feature requests, or questions.
 - Please include:
   - A clear, descriptive title
   - Steps to reproduce (for bugs)
@@ -61,7 +61,7 @@ We welcome contributions of all kinds—bug reports, feature requests, code, tes
    ```
 4. **Start the server locally**
    ```bash
-   npx @jpisnice/shadcn-ui-mcp-server --help
+   npx @timothiousai/shadcn-ui-mcp-server --help
    ```
 
 ---

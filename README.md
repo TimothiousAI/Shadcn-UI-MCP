@@ -1,6 +1,6 @@
 # Shadcn UI v4 MCP Server
 
-[![npm version](https://badge.fury.io/js/@jpisnice%2Fshadcn-ui-mcp-server.svg)](https://badge.fury.io/js/@jpisnice%2Fshadcn-ui-mcp-server)
+[![npm version](https://badge.fury.io/js/@timothiousai%2Fshadcn-ui-mcp-server.svg)](https://badge.fury.io/js/@timothiousai%2Fshadcn-ui-mcp-server)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A Model Context Protocol (MCP) server that provides AI assistants with comprehensive access to [shadcn/ui v4](https://ui.shadcn.com/) components, blocks, demos, and metadata. This server enables AI tools like Claude Desktop, Continue.dev, VS Code, Cursor, and other MCP-compatible clients to retrieve and work with shadcn/ui components seamlessly.
@@ -22,20 +22,20 @@ The fastest way to get started - no installation required!
 
 ```bash
 # Basic usage (rate limited to 60 requests/hour)
-npx @jpisnice/shadcn-ui-mcp-server
+npx @timothiousai/shadcn-ui-mcp-server
 
 # With GitHub token for better rate limits (5000 requests/hour)
-npx @jpisnice/shadcn-ui-mcp-server --github-api-key ghp_your_token_here
+npx @timothiousai/shadcn-ui-mcp-server --github-api-key ghp_your_token_here
 
 # Short form
-npx @jpisnice/shadcn-ui-mcp-server -g ghp_your_token_here
+npx @timothiousai/shadcn-ui-mcp-server -g ghp_your_token_here
 
 # Using environment variable
 export GITHUB_PERSONAL_ACCESS_TOKEN=ghp_your_token_here
-npx @jpisnice/shadcn-ui-mcp-server
+npx @timothiousai/shadcn-ui-mcp-server
 ```
 
-**🎯 Try it now**: Run `npx @jpisnice/shadcn-ui-mcp-server --help` to see all options!
+**🎯 Try it now**: Run `npx @timothiousai/shadcn-ui-mcp-server --help` to see all options!
 
 ### 🔧 Command Line Options
 
@@ -51,10 +51,10 @@ Environment Variables:
   GITHUB_PERSONAL_ACCESS_TOKEN    Alternative way to provide GitHub token
 
 Examples:
-  npx @jpisnice/shadcn-ui-mcp-server --help
-  npx @jpisnice/shadcn-ui-mcp-server --version
-  npx @jpisnice/shadcn-ui-mcp-server -g ghp_1234567890abcdef
-  GITHUB_PERSONAL_ACCESS_TOKEN=ghp_token npx @jpisnice/shadcn-ui-mcp-server
+  npx @timothiousai/shadcn-ui-mcp-server --help
+  npx @timothiousai/shadcn-ui-mcp-server --version
+  npx @timothiousai/shadcn-ui-mcp-server -g ghp_1234567890abcdef
+  GITHUB_PERSONAL_ACCESS_TOKEN=ghp_token npx @timothiousai/shadcn-ui-mcp-server
 ```
 
 ## 🔑 GitHub API Token Setup
@@ -84,7 +84,7 @@ Examples:
 
 **Method 1: Command Line (Quick testing)**
 ```bash
-npx @jpisnice/shadcn-ui-mcp-server --github-api-key ghp_your_token_here
+npx @timothiousai/shadcn-ui-mcp-server --github-api-key ghp_your_token_here
 ```
 
 **Method 2: Environment Variable (Recommended)**
@@ -93,7 +93,7 @@ npx @jpisnice/shadcn-ui-mcp-server --github-api-key ghp_your_token_here
 export GITHUB_PERSONAL_ACCESS_TOKEN=ghp_your_token_here
 
 # Then simply run:
-npx @jpisnice/shadcn-ui-mcp-server
+npx @timothiousai/shadcn-ui-mcp-server
 ```
 
 ## 🛠️ Editor Integration
@@ -118,7 +118,7 @@ npx @jpisnice/shadcn-ui-mcp-server
     "mcpServers": {
       "shadcn-ui": {
         "command": "npx",
-        "args": ["@jpisnice/shadcn-ui-mcp-server", "--github-api-key", "ghp_your_token_here"]
+        "args": ["@timothiousai/shadcn-ui-mcp-server", "--github-api-key", "ghp_your_token_here"]
       }
     }
   }
@@ -139,7 +139,7 @@ npx @jpisnice/shadcn-ui-mcp-server
   "claude.mcpServers": {
     "shadcn-ui": {
       "command": "npx",
-      "args": ["@jpisnice/shadcn-ui-mcp-server"],
+      "args": ["@timothiousai/shadcn-ui-mcp-server"],
       "env": {
         "GITHUB_PERSONAL_ACCESS_TOKEN": "ghp_your_token_here"
       }
@@ -162,7 +162,7 @@ npx @jpisnice/shadcn-ui-mcp-server
   "mcpServers": {
     "shadcn-ui": {
       "command": "npx",
-      "args": ["@jpisnice/shadcn-ui-mcp-server", "--github-api-key", "ghp_your_token_here"]
+      "args": ["@timothiousai/shadcn-ui-mcp-server", "--github-api-key", "ghp_your_token_here"]
     }
   }
 }
@@ -177,7 +177,7 @@ Create a `.cursorrules` file in your project root:
   "mcpServers": {
     "shadcn-ui": {
       "command": "npx",
-      "args": ["@jpisnice/shadcn-ui-mcp-server"],
+      "args": ["@timothiousai/shadcn-ui-mcp-server"],
       "env": {
         "GITHUB_PERSONAL_ACCESS_TOKEN": "ghp_your_token_here"
       }
@@ -195,7 +195,7 @@ Add to your Claude Desktop configuration (`~/.config/Claude/claude_desktop_confi
   "mcpServers": {
     "shadcn-ui": {
       "command": "npx",
-      "args": ["@jpisnice/shadcn-ui-mcp-server", "--github-api-key", "ghp_your_token_here"]
+      "args": ["@timothiousai/shadcn-ui-mcp-server", "--github-api-key", "ghp_your_token_here"]
     }
   }
 }
@@ -208,7 +208,7 @@ Or with environment variable:
   "mcpServers": {
     "shadcn-ui": {
       "command": "npx",
-      "args": ["@jpisnice/shadcn-ui-mcp-server"],
+      "args": ["@timothiousai/shadcn-ui-mcp-server"],
       "env": {
         "GITHUB_PERSONAL_ACCESS_TOKEN": "ghp_your_token_here"
       }
@@ -232,7 +232,7 @@ Or with environment variable:
 {
   "name": "shadcn-ui",
   "command": "npx",
-  "args": ["@jpisnice/shadcn-ui-mcp-server", "--github-api-key", "ghp_your_token_here"]
+  "args": ["@timothiousai/shadcn-ui-mcp-server", "--github-api-key", "ghp_your_token_here"]
 }
 ```
 
@@ -316,7 +316,7 @@ The MCP server provides these tools for AI assistants:
 **"Rate limit exceeded" errors:**
 ```bash
 # Solution: Add GitHub API token
-npx @jpisnice/shadcn-ui-mcp-server --github-api-key ghp_your_token_here
+npx @timothiousai/shadcn-ui-mcp-server --github-api-key ghp_your_token_here
 ```
 
 **"Command not found" errors:**
@@ -329,7 +329,7 @@ npx --version   # Should work
 **Component not found:**
 ```bash
 # Check available components first
-npx @jpisnice/shadcn-ui-mcp-server
+npx @timothiousai/shadcn-ui-mcp-server
 # Then call list_components tool via your MCP client
 ```
 
@@ -338,13 +338,13 @@ npx @jpisnice/shadcn-ui-mcp-server
 # Set proxy if needed
 export HTTP_PROXY=http://your-proxy:8080
 export HTTPS_PROXY=http://your-proxy:8080
-npx @jpisnice/shadcn-ui-mcp-server
+npx @timothiousai/shadcn-ui-mcp-server
 ```
 
 **Editor not recognizing MCP server:**
 ```bash
 # Verify the server is running
-npx @jpisnice/shadcn-ui-mcp-server --help
+npx @timothiousai/shadcn-ui-mcp-server --help
 
 # Check your editor's MCP configuration
 # Ensure the command and args are correct
@@ -356,7 +356,7 @@ Enable verbose logging:
 
 ```bash
 # Set debug environment variable
-DEBUG=* npx @jpisnice/shadcn-ui-mcp-server --github-api-key ghp_your_token
+DEBUG=* npx @timothiousai/shadcn-ui-mcp-server --github-api-key ghp_your_token
 ```
 
 ## 📄 License
@@ -373,10 +373,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- 🐛 [Report Issues](https://github.com/Jpisnice/shadcn-ui-mcp-server/issues)
-- 💬 [Discussions](https://github.com/Jpisnice/shadcn-ui-mcp-server/discussions)
-- 📖 [Documentation](https://github.com/Jpisnice/shadcn-ui-mcp-server#readme)
-- 📦 [npm Package](https://www.npmjs.com/package/@jpisnice/shadcn-ui-mcp-server)
+- 🐛 [Report Issues](https://github.com/TimothiousAI/Shadcn-UI-MCP/issues)
+- 💬 [Discussions](https://github.com/TimothiousAI/Shadcn-UI-MCP/discussions)
+- 📖 [Documentation](https://github.com/TimothiousAI/Shadcn-UI-MCP#readme)
+- 📦 [npm Package](https://www.npmjs.com/package/@timothiousai/shadcn-ui-mcp-server)
 
 ## 🔗 Related Projects
 
@@ -392,6 +392,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Made with ❤️ by [Janardhan Polle](https://github.com/Jpisnice)**
+**Made with ❤️ by [TimothiousAI](https://github.com/TimothiousAI)**
 
 **Star ⭐ this repo if you find it helpful!**
